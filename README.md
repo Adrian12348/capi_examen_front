@@ -1,27 +1,24 @@
-# CapiExamenJoseAdrianMartinezSanchezFront
+# Frontend: Capi Examen José Adrián Martínez Sánchez
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.3.
+## Descripción
 
-## Development server
+Este es el frontend de la aplicación de libreta de direcciones, desarrollado utilizando Angular. La aplicación permite gestionar contactos con funcionalidades para agregar, editar, eliminar y visualizar contactos. Utiliza el componente ngx-datatable para mostrar la lista de contactos en una tabla con paginación y filtros.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Requisitos
 
-## Code scaffolding
+- *Node.js*: Versión 14.x o superior. Node.js es necesario para ejecutar el servidor de desarrollo y gestionar las dependencias del proyecto.
+- *npm*: Versión 6.x o superior. npm es el gestor de paquetes de Node.js utilizado para instalar las dependencias del proyecto.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Instalación y Ejecución
 
-## Build
+### 1. Clonar el Repositorio
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Primero, necesitas clonar el repositorio desde GitHub a tu máquina local. Abre una terminal y ejecuta el siguiente comando:
 
-## Running unit tests
+```bash git clone https://github.com/Adrian12348/capi_examen_front.git
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### 2. Instalar dependencias
+npm install
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+### 3. Iniciar el Servidor de Desarrollo
+ng serve
