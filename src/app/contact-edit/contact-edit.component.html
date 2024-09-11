@@ -1,0 +1,60 @@
+<!-- src/app/contact-edit/contact-edit.component.html -->
+<div class="container">
+	<h1 class="mb-4">Edit Contact</h1>
+	<form (ngSubmit)="onSubmit()" #contactForm="ngForm" class="contact-form">
+		<div class="form-group">
+			<label for="name">Name:</label>
+			<input type="text" id="name" [(ngModel)]="contact.name" name="name" required class="form-control" />
+		</div>
+
+		<div class="form-group">
+			<label for="birthday">Birthday:</label>
+			<input type="date" id="birthday" [(ngModel)]="contact.birthday" name="birthday" class="form-control" />
+		</div>
+
+		<div class="form-group">
+			<label for="website">Website:</label>
+			<input type="url" id="website" [(ngModel)]="contact.website" name="website" class="form-control" />
+		</div>
+
+		<div class="form-group">
+			<label for="company">Company:</label>
+			<input type="text" id="company" [(ngModel)]="contact.company" name="company" class="form-control" />
+		</div>
+
+		<div class="form-group">
+			<label for="notes">Notes:</label>
+			<textarea id="notes" [(ngModel)]="contact.notes" name="notes" class="form-control" rows="4" placeholder="Add some notes..."></textarea>
+		</div>
+
+		<div class="form-group">
+			<label>Phones:</label>
+			<div *ngFor="let phone of contact.phones; let i = index; trackBy: trackByIndex" class="phone-group">
+				<input type="text" [(ngModel)]="contact.phones[i].phone" name="phone{{i}}" placeholder="Phone number" class="form-control mb-2" />
+				<button type="button" (click)="removePhone(i)" class="btn btn-danger btn-sm">Remove</button>
+			</div>
+			<button type="button" (click)="addPhone()" class="btn btn-secondary">Add Phone</button>
+		</div>
+
+		<div class="form-group">
+			<label>Emails:</label>
+			<div *ngFor="let email of contact.emails; let i = index; trackBy: trackByIndex" class="email-group">
+				<input type="email" [(ngModel)]="contact.emails[i].email" name="email{{i}}" placeholder="Email address" class="form-control mb-2" />
+				<button type="button" (click)="removeEmail(i)" class="btn btn-danger btn-sm">Remove</button>
+			</div>
+			<button type="button" (click)="addEmail()" class="btn btn-secondary">Add Email</button>
+		</div>
+
+		<div class="form-group">
+			<label>Addresses:</label>
+			<div *ngFor="let address of contact.addresses; let i = index; trackBy: trackByIndex" class="address-group">
+				<input type="text" [(ngModel)]="contact.addresses[i].address" name="address{{i}}" placeholder="Address" class="form-control mb-2" />
+				<button type="button" (click)="removeAddress(i)" class="btn btn-danger btn-sm">Remove</button>
+			</div>
+			<button type="button" (click)="addAddress()" class="btn btn-secondary">Add Address</button>
+		</div>
+
+		<button type="submit" class="btn btn-primary">Save Contact</button>
+		<a [routerLink]="['/contacts']" class="btn btn-secondary ml-2">Back to Contact List</a>
+	</form>
+</div>

@@ -1,0 +1,151 @@
+/* src/app/contact-list/contact-list.component.css */
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 20px;
+  background-color: #f4f7f9;
+  border-radius: 8px;
+}
+
+h1 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+input {
+  margin-bottom: 20px;
+  border-radius: 4px;
+  border: 1px solid #ced4da;
+  padding: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 1rem;
+}
+
+ngx-datatable {
+  font-size: 16px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+ngx-datatable .ngx-datatable-header {
+  background-color: #007bff;
+  color: #fff;
+  font-weight: bold;
+  border-bottom: 2px solid #0056b3;
+}
+
+ngx-datatable .ngx-datatable-footer {
+  background-color: #f8f9fa;
+  border-top: 1px solid #dee2e6;
+}
+
+ngx-datatable .ngx-datatable-header-cell,
+ngx-datatable .ngx-datatable-cell {
+  padding: 12px;
+  border-right: 1px solid #dee2e6;
+  vertical-align: middle;
+}
+
+ngx-datatable .ngx-datatable-cell {
+  background-color: #fff;
+}
+
+ngx-datatable .ngx-datatable-header-cell {
+  background-color: #007bff;
+  color: #fff;
+}
+
+ngx-datatable .ngx-datatable-row:nth-child(odd) {
+  background-color: #f9f9f9;
+}
+
+ngx-datatable .ngx-datatable-row:hover {
+  background-color: #e9ecef;
+}
+
+ngx-datatable .ngx-datatable-footer .ngx-datatable-pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0;
+}
+
+ngx-datatable .ngx-datatable-footer .ngx-datatable-pagination .ngx-datatable-page-button {
+  background-color: #007bff;
+  color: #fff;
+  border: 1px solid #007bff;
+  padding: 6px 12px;
+  border-radius: 4px;
+  margin: 0 2px;
+  cursor: pointer;
+  text-align: center;
+  font-size: 14px;
+}
+
+ngx-datatable .ngx-datatable-footer .ngx-datatable-pagination .ngx-datatable-page-button:hover {
+  background-color: #0056b3;
+  border-color: #004085;
+}
+
+ngx-datatable .ngx-datatable-footer .ngx-datatable-pagination .ngx-datatable-page-button.disabled {
+  background-color: #e9ecef;
+  border-color: #e9ecef;
+  color: #6c757d;
+  cursor: not-allowed;
+}
+
+ngx-datatable .ngx-datatable-footer .ngx-datatable-pagination .ngx-datatable-page-button.active {
+  background-color: #0056b3;
+  border-color: #004085;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 4px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+  border-color: #004085;
+}
+
+.btn-secondary {
+  background-color: #6c757d;
+  border-color: #6c757d;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 4px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.btn-secondary:hover {
+  background-color: #5a6268;
+  border-color: #545b62;
+}
+
+.btn-danger {
+  background-color: #dc3545;
+  border-color: #dc3545;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 4px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.btn-danger:hover {
+  background-color: #c82333;
+  border-color: #bd2130;
+}
