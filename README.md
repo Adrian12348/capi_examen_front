@@ -14,11 +14,13 @@ Este es el frontend de la aplicación de libreta de direcciones, desarrollado ut
 ### 1. Clonar el Repositorio
 
 Primero, necesitas clonar el repositorio desde GitHub a tu máquina local. Abre una terminal y ejecuta el siguiente comando:
+```
 
-```bash git clone https://github.com/Adrian12348/capi_examen_front.git
+bash git clone https://github.com/Adrian12348/capi_examen_front.git
+```
 
-### 2. Instalar dependencias
+## 2. Instalar dependencias
 npm install
 
-### 3. Iniciar el Servidor de Desarrollo
+## 3. Iniciar el Servidor de Desarrollo
 ng serve
